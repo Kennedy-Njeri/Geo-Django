@@ -22,13 +22,13 @@ def county_datasets(request):
 
 
 
-#def shop_datasets(request):
+def shop_datasets(request):
 
 	#shops = serialize('geojson', Shop.objects.all())
 
-    #data = serializers.serialize("geojson", Shop.objects.all())
+    data = serializers.serialize("geojson", Shop.objects.all())
 
-    #return HttpResponse(data, content_type='json')
+    return HttpResponse(data, content_type='json')
 
 
 
