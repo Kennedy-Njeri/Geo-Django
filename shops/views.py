@@ -13,12 +13,18 @@ class HomePageView(TemplateView):
     template_name = 'index.html'
 
 
+
+
 def county_datasets(request):
 
 	counties = serialize('geojson', Counties.objects.all())
 
 
 	return HttpResponse(counties, content_type='json')
+
+
+
+
 
 
 
